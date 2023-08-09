@@ -15,5 +15,6 @@ spring:
       enabled: true
 
 server:
+  port: 8000
   error:
     include-message: always
