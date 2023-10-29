@@ -1,12 +1,13 @@
 package br.com.tads.pokemon.entities;
 
 import br.com.tads.pokemon.dtos.TrainerDto;
+import lombok.Data;
 import lombok.Getter;
 
 import javax.persistence.*;
 import java.util.List;
 
-@Getter
+@Data
 @Entity
 @Table(name = "trainers")
 public class Trainer {

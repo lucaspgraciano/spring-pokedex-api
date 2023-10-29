@@ -1,13 +1,14 @@
 package br.com.tads.pokemon.entities;
 
 import br.com.tads.pokemon.dtos.AbilityDto;
+import lombok.Data;
 import lombok.Getter;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
 import java.util.List;
 
-@Getter
+@Data
 @Entity
 @Table(name = "abilities")
 public class Ability {

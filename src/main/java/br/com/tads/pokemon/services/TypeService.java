@@ -48,7 +48,7 @@ public class TypeService {
         this.doesHavePokemonWithType(id);
         Type typeToBeDelete = this.findTypeById(id);
         PokemonTypeDto dto = assignToDto(typeToBeDelete);
-        this.typeRepository.delete(typeToBeDelete);
+        this.typeRepository.deleteById(typeToBeDelete.getId());
         return dto;
     }
 
